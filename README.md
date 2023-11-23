@@ -3,6 +3,10 @@
 ## Overview
 This Python script allows you to retrieve information about multiple domains using the WhoisXMLAPI service. It fetches details such as the registrar name, expiration date, and days until expiration for each specified domain.
 
+
+https://github.com/davidinfosec/who.is-domain-info/assets/87215831/c4a16389-671b-41a5-872a-b18da4228362
+
+
 ## Dependencies
 - [Python](https://www.python.org/downloads/) (Version 3.6 or higher)
 - [Requests](https://docs.python-requests.org/en/latest/) library: Used for making HTTP requests.
