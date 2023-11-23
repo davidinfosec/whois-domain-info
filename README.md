@@ -1,7 +1,7 @@
 # Domain WHO.IS Information Script
 
 ## Overview
-WHO.IS Domain Info is a script that fetches WHO.IS data like Domain Name, Registrar, Expiration Date, and Days Till Expiry and organizes it in a spreadsheet. 
+WHO.IS Domain Info is a script that fetches WHO.IS data like Domain Name, Registrar, Expiration Date, and Days Till Expiry and organizes it in a spreadsheet. (Using the WhoisXMLAPI service)
 
 
 https://github.com/davidinfosec/who.is-domain-info/assets/87215831/c4a16389-671b-41a5-872a-b18da4228362
