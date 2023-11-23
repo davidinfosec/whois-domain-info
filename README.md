@@ -1,7 +1,7 @@
 # Domain WHO.IS Information Script
 
 ## Overview
-This Python script allows you to retrieve information about multiple domains using the WhoisXMLAPI service. It fetches details such as the registrar name, expiration date, and days until expiration for each specified domain.
+WHO.IS Domain Info is a script that fetches WHO.IS data like Domain Name, Registrar, Expiration Date, and Days Till Expiry and organizes it in a spreadsheet. 
 
 
 https://github.com/davidinfosec/who.is-domain-info/assets/87215831/c4a16389-671b-41a5-872a-b18da4228362
