@@ -43,11 +43,8 @@ https://github.com/davidinfosec/whois-domain-info/assets/87215831/c4a16389-671b-
 
 9. **Improved File Path Handling:**
     - Enhanced file path handling in `process_domains_from_file()` to check for file existence and prompt for a valid path.
-
-10. **Enhanced User Interaction:**
-    - Improved user prompts and messages for a more user-friendly experience.
    
-11. **Added Dan.com and Afternic.com Links to CSV Output:**
+10. **Added Dan.com and Afternic.com Links to CSV Output:**
     - Two new columns, "Dan.com Link" and "Afternic Link," have been added to the CSV file to store corresponding links generated using the domain name.
 
    
