@@ -47,6 +47,10 @@ https://github.com/davidinfosec/whois-domain-info/assets/87215831/c4a16389-671b-
 10. **Enhanced User Interaction:**
     - Improved user prompts and messages for a more user-friendly experience.
    
+11. **Added Dan.com and Afternic Links to CSV Output:**
+   - Two new columns, "Dan.com Link" and "Afternic Link," have been added to the CSV file to store corresponding links generated using the domain name.
+
+   
 
 ## Dependencies
 - [Python](https://www.python.org/downloads/) (Version 3.6 or higher)
