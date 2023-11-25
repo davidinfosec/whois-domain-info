@@ -72,7 +72,6 @@ process_domains_from_file(in_file_path, your_username, your_password)
 
 - Ensure that your API account has sufficient credits to perform the desired number of queries.
 - For more information on WhoisXMLAPI and available options, refer to the [official documentation](https://www.whoisxmlapi.com/).
-- Script is sort of slow at the momentum, be patient if you have a large quantity of domain names. It can take a long time to query, but once the list is complete, the csv will be processed. I will look to optimize this shortly, but wanted to get this tool out there for those who want it in its early stages.
 
 ## Changelog - November 24, 2024
 
