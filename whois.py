@@ -81,7 +81,10 @@ def get_domain_info(domain_name, username, password, api_key):
             # Update Time of Lookup to the current time
             time_of_lookup = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
-            return registrar, expiration_date, days_until_expiration, time_of_lookup
+            dan_com_link = f'https://dan.com/buy-domain/{domain_name}'
+            afternic_link = f'https://www.afternic.com/domain/{domain_name}'
+
+            return registrar, expiration_date, days_until_expiration, time_of_lookup, dan_com_link, afternic_link
         else:
             print(f"No 'WhoisRecord' key found in the API response")
             return None
@@ -91,10 +94,12 @@ def get_domain_info(domain_name, username, password, api_key):
         return None
 
 def export_all_to_csv(domain_info_list, csv_filename='output_info.csv'):
+    header_exists = os.path.exists(csv_filename) and os.path.getsize(csv_filename) > 0
+
     with open(csv_filename, mode='a', newline='') as file:
         writer = csv.writer(file)
-        if file.tell() == 0:
-            writer.writerow(['Domain', 'Registrar', 'Expiration Date', 'Days Until Expiration', 'Time of Lookup'])
+        if not header_exists:
+            writer.writerow(['Domain', 'Registrar', 'Expiration Date', 'Days Until Expiration', 'Time of Lookup', 'Dan.com Link', 'Afternic Link'])
 
         for domain_info in domain_info_list:
             writer.writerow(domain_info)
@@ -105,14 +110,16 @@ def process_single_domain(domain_name, username, password, api_key):
     result = get_domain_info(domain_name, username, password, api_key)
 
     if result:
-        registrar, expiration_date, days_until_expiration, time_of_lookup = result
+        registrar, expiration_date, days_until_expiration, time_of_lookup, dan_com_link, afternic_link = result
         print(f"Domain: {domain_name}")
         print(f"Registrar: {registrar}")
         print(f"Expiration Date: {expiration_date}")
         print(f"Days Until Expiration: {days_until_expiration}")
-        print(f"Time of Lookup: {time_of_lookup}\n")
+        print(f"Time of Lookup: {time_of_lookup}")
+        print(f"Dan.com Link: {dan_com_link}")
+        print(f"Afternic Link: {afternic_link}\n")
 
-        return [domain_name, registrar, expiration_date, days_until_expiration, time_of_lookup]
+        return [domain_name, registrar, expiration_date, days_until_expiration, time_of_lookup, dan_com_link, afternic_link]
     else:
         print(f"Unable to fetch information for domain: {domain_name}\n")
         return None
