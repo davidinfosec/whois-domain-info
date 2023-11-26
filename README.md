@@ -109,7 +109,14 @@ process_domains_from_file(in_file_path, your_username, your_password)
 
 9. **Improved File Path Handling:**
     - Enhanced file path handling in `process_domains_from_file()` to check for file existence and prompt for a valid path.
+
+  
+### Support and Contributions
+
+If you encounter any issues or have suggestions for improvements, feel free to open an issue or submit a pull request. Your contributions are highly appreciated.
+
+Feel like this has been useful? Donate toward my latest projects. https://www.poof.io/tip/@davidinfosec
    
-10. **Added Dan.com and Afternic.com Links to CSV Output:**
+11. **Added Dan.com and Afternic.com Links to CSV Output:**
     - Two new columns, "Dan.com Link" and "Afternic Link," have been added to the CSV file to store corresponding links generated using the domain name.
 
